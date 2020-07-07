@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingBee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="cart.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                
+                <!-- Logo -->
+                <img id="logo" src="https://www.brandcrowd.com/gallery/brands/pictures/picture13099962201777.jpg">
+                
+                <!-- Orders history link and logout link -->
+                <div class="m-2">
+                    <a href="#" id="order">My orders</a><br>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div id="total" class="row"><p class="ml-auto">Total Price: </p></div>
+            <div class="row m-2">
+                
+                <!-- Continue Shopping button -->
+                <buttton class="btn btn-primary mr-auto" id="continue-shopping">Continue Shopping</buttton>
+                
+                <!-- Checkout button -->
+                <buttton class="btn btn-primary ml-auto" id="checkout">Proceed to checkout</buttton>
+                
+            </div>
+            
+            <!-- Empty cart button -->
+            <div class="row m-2">
+                <button class="btn btn-danger mx-auto" id="empty">Empty Cart</button>
+            </div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingBee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- javaScript -->
+        <script src="login-form.js"></script>
+    </head>
+    <body>
+        <!-- Logo -->
+        <div class="text-center">
+            <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13099962201777.jpg">
+        </div>
+        
+        <!-- Warning if the input is invalid -->
+        <p id="invalid-form" class="text-center text-warning"></p>
+        
+        <!-- Login Form -->
+        <form action="home.html" name="login-form" class="mx-auto was-validated" onsubmit="return validateForm()">
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" formmethod="post">Login</button>
+         </form>            
+    </body>
+</html>

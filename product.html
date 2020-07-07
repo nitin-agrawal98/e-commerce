@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>ShoppingBee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+       <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="product.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-between">
+                
+                <!-- Logo -->
+                <img id="logo" src="https://www.brandcrowd.com/gallery/brands/pictures/picture13099962201777.jpg">
+                
+                <!-- Cart link and logout link -->
+                <div class="m-2">
+                    <a href="#" id="cart">My cart</a><br>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+                
+            </div>
+            <div class="row">
+                
+                <!-- Image of product -->
+                <div class="col-sm-6 product-img"></div>
+                
+                <!-- Details of product -->
+                <div class="col-sm-6 product-details"></div>
+                
+            </div>
+            <div class="row m-2">
+                
+                <!-- Add to cart button -->
+                <button type="button" class="btn btn-primary mx-auto mw-100 p-3" >Add to cart</button>
+                
+            </div>
+        </div>
+    </body>
+</html>

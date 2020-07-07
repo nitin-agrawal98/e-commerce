@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingBee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="home.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                
+                <!-- Logo -->
+                <img id="logo" src="https://www.brandcrowd.com/gallery/brands/pictures/picture13099962201777.jpg">
+                
+                <!-- Cart link and logout link -->
+                <div class="m-2">
+                    <a href="#" id="cart">My cart</a><br>
+                    <a href="#" id="logout">Logout</a>
+                </div>
+                
+            </div>
+            
+            <!-- Navigation bar to select specific category -->
+            <nav class="navbar navbar-expand-sm p-0 sticky-top">
+                <ul class="navbar-nav nav-fill w-100 bg-light">
+                    <li id="home" class="nav-item border border-dark p-2 text-capitalize">home</li>
+                    <li id="electronics" class="nav-item border border-dark p-2 text-capitalize">electronics</li>
+                    <li id="books" class="nav-item border border-dark p-2 text-capitalize">books</li>
+                    <li id="sports" class="nav-item border border-dark p-2 text-capitalize">sports</li>
+                    <li id="clothing" class="nav-item border border-dark p-2 text-capitalize">clothing</li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="col-sm-3 border-right border-dark">
+                    
+                    <!-- Brand filter -->
+                    <form class="pt-4" name="brand"></form>
+                    
+                    <!-- Price filter -->
+                    <form name="price"></form>
+                </div>
+				<!-- Various products -->
+                <div class="col-sm-9 d-flex flex-wrap products"></div>
+            </div>
+        </div>
+    </body>
+</html>
